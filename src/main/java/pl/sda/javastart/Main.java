@@ -25,5 +25,17 @@ public class Main {
 
         String textWithWhitespaces = " Adam";
         System.out.println(textWithWhitespaces.trim());
+
+        System.out.println("\"a\"+2= " + ("a" + 2));
+        System.out.println('a' + 4 + "b");
+        System.out.println("a" + 4 + 'b');
+
+
+        System.out.println(3 == 3 && 3 == 4);
+        System.out.println(3 != 5 || 3 == 5);
+        System.out.println("(2+4)>(1+3):" + ((2 + 4) > (1 + 3)));
+        System.out.println("cos".equals("cos"));//obiekty powinnismy porownywac za pomoca .equals()
+        System.out.println("cos" == "cos");//nigdy nie porównujmy obiektów za pomocą ==, tylko typy proste
+        System.out.println("cos" == new String("cos"));
     }
 }
