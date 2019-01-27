@@ -8,9 +8,9 @@ public class IfsExampleTest {
 
     @Test
     public void shouldNotAnswerBecauseWeAreAsleep() {
-        boolean mum=true;
-        boolean isMorning=true;
-        boolean isAsleep=true;
+        boolean mum = true;
+        boolean isMorning = true;
+        boolean isAsleep = true;
 
         boolean result = IfsExample.answerCell(mum, isMorning, isAsleep);
 
@@ -19,9 +19,9 @@ public class IfsExampleTest {
 
     @Test
     public void shouldNotAnswerBecauseWeAreNotAsleepAndItIsMorningAndItIsNotMum() {
-        boolean mum=false;
-        boolean isMorning=true;
-        boolean isAsleep=false;
+        boolean mum = false;
+        boolean isMorning = true;
+        boolean isAsleep = false;
 
         boolean result = IfsExample.answerCell(mum, isMorning, isAsleep);
 
