@@ -5,6 +5,8 @@ public class IfsExample {
         System.out.println(isEven(42));
         System.out.println(dividableByThreeAndFive(16));
         System.out.println(introduce(" Michal ", 30, true));
+
+        System.out.println(answerCell(true, true, false));
     }
 
     public static boolean isEven(int number) {
@@ -24,7 +26,7 @@ public class IfsExample {
 
     public static String introduce(String name, int age, boolean male) {
         String gender;
-        if (male == true) {
+        if (male) {
             gender = " mezczyzna";
         } else {
             gender = " kobieta";
@@ -44,5 +46,15 @@ public class IfsExample {
         } else {
             return false;
         }
+    }
+
+    public static boolean answerCell(boolean mum, boolean isMorning, boolean isAsleep) {
+        if (isAsleep) {
+            return false;
+        }
+        if (isMorning && !mum) {
+            return false;
+        }
+        return true;
     }
 }
