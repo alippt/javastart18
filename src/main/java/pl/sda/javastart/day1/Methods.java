@@ -1,4 +1,4 @@
-package pl.sda.javastart;
+package pl.sda.javastart.day1;
 
 public class Methods {
     public static final double INCH_TO_METER_MULTIPLIER = 0.0254;
@@ -28,6 +28,7 @@ public class Methods {
 
     public static double inchToMeter (double inches) {
         return (inches*INCH_TO_METER_MULTIPLIER);
+
     }
 
 }
